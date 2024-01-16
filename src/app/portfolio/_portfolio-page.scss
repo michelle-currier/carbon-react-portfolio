@@ -1,0 +1,29 @@
+@use '@carbon/react/scss/spacing' as *;
+@use '@carbon/react/scss/type' as *;
+@use '@carbon/react/scss/breakpoint' as *;
+@use '@carbon/react/scss/theme' as *;
+
+.portfolio-page {
+}
+.portfolio-page__banner {
+  margin-left: -$spacing-06;
+  margin-right: -$spacing-06;
+  padding-top: $spacing-05;
+  padding-bottom: $spacing-07 * 4;
+  padding-left: $spacing-09;
+  background: url('https://v7-react.carbondesignsystem.com/static/media/carbon_bg.105e3528.png')
+    no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.portfolio-page__heading {
+  color: #fff;
+}
+.responsive_img {
+  width: 100%;
+  height: 100%;
+}
+
+.shadow {
+  box-shadow: 0 2px 8px #12161929;
+}
