@@ -63,7 +63,7 @@ export default function LandingPage() {
                     engaging and user-friendly digital experiences.
                   </p>
                   <a
-                    href="https://ibm.box.com/v/portfolioMichelleCurrier"
+                    href="https://ibm.box.com/v/MichelleCurrierppt"
                     target="blank"
                   >
                     <Button>Portfolio Packet</Button>
@@ -142,14 +142,14 @@ export default function LandingPage() {
       </Column>
       <Column lg={16} md={8} sm={4} className="landing-page__r3">
         <InfoSection heading="Certifications &amp; trainings" className="">
-        <InfoCard
+          <InfoCard
             heading="Enterprise Design Thinking"
             body="Current projects include the NA CIC Website rebrand and CMS build with Vue. Sitting in with the Expression Journal app as a Design Consultant."
             icon={() => <EnterpriseDesignThinking_01 size={32} />}
           />
           <InfoCard
             heading="AI training"
-            body="Generative AI & watsonx for IBM <br> Carbon React Tutorial and converted that to a portfolio site deploying from GitHub using Vercel.app to deploy."
+            body="Generative AI & watsonx for IBM Carbon React Tutorial and converted that to a portfolio site deploying from GitHub using Vercel.app to deploy."
             icon={() => <WatsonxAi size={32} />}
           />
           <InfoCard
