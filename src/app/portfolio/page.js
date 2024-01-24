@@ -68,7 +68,7 @@ export default function PorfolioPage() {
                 <Column md={4} lg={{ span: 8, offset: 8 }} sm={4}>
                   <Image
                     className="landing-page__illo"
-                    src="/ca_template_gulp.gif"
+                    src="http://mcurrier.com/ca_template_gulp.gif"
                     alt="documentation for the Consulting Academy template"
                     width={480}
                     height={540}
