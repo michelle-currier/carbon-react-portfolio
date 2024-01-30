@@ -171,8 +171,8 @@ export default function PorfolioPage() {
               </Grid>
             </TabPanel>
             <TabPanel>
-              <Grid className="tabs-group-content">
-                <Column lg={16} className="landing-page__tab-content">
+              <Grid className="tabs-group-content" fullWidth>
+                <Column lg={16} md={8} sm={4} className="landing-page__tab-content">
                   This site was created with:
                   <ul>
                     <li>React: "18.2.0",</li>

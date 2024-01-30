@@ -3,8 +3,8 @@ import './globals.scss';
 import { Providers } from './providers';
 
 export const metadata = {
-  title: 'Carbon + Next13 + Michelle Currier Portfolio',
-  description: 'IBM Carbon Portfolio with NextJS 13 using Vercel.app to deploy from Github',
+  title: 'Michelle Currier Portfolio',
+  description: 'IBM Carbon Portfolio with Carbon + NextJS 13 + using Vercel.app to deploy from Github',
 };
 
 export default function RootLayout({ children }) {

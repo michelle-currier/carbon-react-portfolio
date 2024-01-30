@@ -63,10 +63,10 @@ export default function LandingPage() {
                     engaging and user-friendly digital experiences.
                   </p>
                   <a
-                    href="https://ibm.box.com/v/MichelleCurrierppt"
+                    href="https://ibm.box.com/v/MichelleCurrierPortfolio"
                     target="blank"
                   >
-                    <Button>Portfolio Packet</Button>
+                    <Button>Grab my Portfolio Packet</Button>
                   </a>
                 </Column>
                 <Column md={4} lg={{ span: 8, offset: 7 }} sm={4}>
@@ -83,14 +83,15 @@ export default function LandingPage() {
             <TabPanel>
               <Grid className="tabs-group-content">
                 <Column
-                  lg={16}
-                  md={8}
+                  
+                  md={6}
                   sm={4}
                   className="landing-page__tab-content"
                 >
                   <h2 className="landing-page__subheading">
                     Custom games with L&amp;K web components
                   </h2>
+                
                   <p className="landing-page__p">
                     Addressing the absence of expertise within the team to
                     execute this transition, I proactively took the initiative
@@ -104,12 +105,23 @@ export default function LandingPage() {
                     environment.
                   </p>
                 </Column>
+                <Column md={4} lg={{ span: 8, offset: 8 }} sm={4}>
+                {/* <AspectRatio ratio="4x3"> */}
+                <Image
+                    // className="landing-page__illo"
+                    src="/games.jpg"
+                    alt="documentation for the Consulting Academy template"
+                    ratio="4x3"
+                    width={480}
+                    height={540}
+                    />
+                {/* </AspectRatio> */}
+                </Column>
               </Grid>
             </TabPanel>
             <TabPanel>
               <Grid className="tabs-group-content">
                 <Column
-                  lg={16}
                   md={8}
                   sm={4}
                   className="landing-page__tab-content"
@@ -135,6 +147,18 @@ export default function LandingPage() {
                     efficiency and adherence to professional standards.
                   </p>
                 </Column>
+                <Column md={4} lg={{ span: 8, offset: 8 }} sm={4}>
+                {/* <AspectRatio ratio="4x3"> */}
+                <Image
+                    // className="landing-page__illo"
+                    src="/gulp_how.png"
+                    alt="documentation for the Consulting Academy template"
+                    ratio="4x3"
+                    width={480}
+                    height={540}
+                    />
+                {/* </AspectRatio> */}
+                </Column>
               </Grid>
             </TabPanel>
           </TabPanels>
@@ -154,10 +178,9 @@ export default function LandingPage() {
           />
           <InfoCard
             heading="Other education"
-            body="Generative AI & watsonx for IBM Carbon React tutorial and converting to a portfolio
-            //carbondesignsystem.com/developing/react-tutorial/
+            body="Generative AI & watsonx for IBM Carbon React tutorial and converting to a portfolio.
             
-            AWS Elevate Days 2023
+            AWS Elevate Days 2023,
             
             User Research – Methods and Best Practices*
             "
