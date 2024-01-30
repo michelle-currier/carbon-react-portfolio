@@ -28,11 +28,11 @@ export default function LandingPage() {
   return (
     <Grid className="landing-page" fullWidth>
       <Column lg={16} md={8} sm={4} className="landing-page__banner">
-        {/* <Breadcrumb noTrailingSlash aria-label="Page navigation">
+        <Breadcrumb noTrailingSlash aria-label="Page navigation">
           <BreadcrumbItem>
             <a href="/">Getting started</a>
           </BreadcrumbItem>
-        </Breadcrumb> */}
+        </Breadcrumb>
         <h1 className="landing-page__heading">A Designer who codes...</h1>
       </Column>
       <Column lg={16} md={8} sm={4} className="landing-page__r2">
@@ -154,7 +154,13 @@ export default function LandingPage() {
           />
           <InfoCard
             heading="Other education"
-            body=""
+            body="Generative AI & watsonx for IBM Carbon React tutorial and converting to a portfolio
+            //carbondesignsystem.com/developing/react-tutorial/
+            
+            AWS Elevate Days 2023
+            
+            User Research – Methods and Best Practices*
+            "
             icon={() => <Globe size={32} />}
           />
         </InfoSection>

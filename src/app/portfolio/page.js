@@ -47,11 +47,14 @@ export default function PorfolioPage() {
                   sm={4}
                   className="landing-page__tab-content"
                 >
-                  <h2 className="landing-page__subheading">
+                  <h2 className="portfolio-page">
                     Revolutionize Your Development Workflow: From overwriting
                     woes to seamless GitHub powered solutions
                   </h2>
-                  <h3>Consulting Academy documentation</h3>
+
+                  <h3 className="portfolio-page">
+                    Consulting Academy documentation
+                  </h3>
                   <p className="landing-page__p">
                     An example of a Consulting Academy module template in
                     Github. This showcases the documentation with steps on
@@ -62,17 +65,21 @@ export default function PorfolioPage() {
                     href="https://github.ibm.com/Michelle-Currier/ca_barebones_translation"
                     target="_blank"
                   >
-                    <Button>GitHub repo</Button>
+                    <Button>IBM GitHub repo</Button>
                   </a>
                 </Column>
                 <Column md={4} lg={{ span: 8, offset: 8 }} sm={4}>
                   <Image
                     className="landing-page__illo"
-                    src="http://mcurrier.com/ca_template_gulp.gif"
+                    src="/gulp_how.png"
                     alt="documentation for the Consulting Academy template"
+                    ratio="4x3"
                     width={480}
                     height={540}
+                    // width={925}
+                    // height={880}
                   />
+                  http://mcurrier.com/ca_template_gulp.gif
                 </Column>
               </Grid>
               <Grid className="tabs-group-content">
@@ -166,8 +173,22 @@ export default function PorfolioPage() {
             <TabPanel>
               <Grid className="tabs-group-content">
                 <Column lg={16} className="landing-page__tab-content">
-                  Carbon provides styles and components in Vanilla, React, Next,
-                  Angular, and Vue for anyone building on the web.
+                  This site was created with:
+                  <ul>
+                    <li>React: "18.2.0",</li>
+                    <li>Yarn</li>
+                    <li>Octokit/core: "4.2.0",</li>
+                    <li>Eslint: "8.44.0",</li>
+                    <li>Prettier: "^2.8.8"</li>         
+                    <li>NextJS: "13.4.9"</li>
+                    <li>React-dom: "18.2.0",</li>
+                    <li>SASS: "^1.66.1"</li>
+                    <li>Deployed with Vercel.app</li>
+                    <li>with pushes to GitHub</li>
+                  </ul>
+    
+    
+
                 </Column>
               </Grid>
             </TabPanel>

@@ -21,7 +21,7 @@ import Link from 'next/link';
 const TutorialHeader = () => (
   <HeaderContainer
     render={({ isSideNavExpanded, onClickSideNavExpand }) => (
-      <Header aria-label="Carbon Tutorial">
+      <Header aria-label="Nav">
         <SkipToContent />
         <HeaderMenuButton
           aria-label="Open menu"
@@ -31,7 +31,7 @@ const TutorialHeader = () => (
         <Link href="/" passHref legacyBehavior>
           <HeaderName prefix="IBM"> | m. currier</HeaderName>
         </Link>
-        <HeaderNavigation aria-label="Carbon Tutorial">
+        <HeaderNavigation aria-label="Nav">
           <Link href="/repos" passHref legacyBehavior>
             <HeaderMenuItem>Repositories</HeaderMenuItem>
           </Link>

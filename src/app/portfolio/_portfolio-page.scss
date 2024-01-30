@@ -2,9 +2,10 @@
 @use '@carbon/react/scss/type' as *;
 @use '@carbon/react/scss/breakpoint' as *;
 @use '@carbon/react/scss/theme' as *;
+@use '@carbon/react';
 
-.portfolio-page {
-}
+// .portfolio-page {
+// }
 .portfolio-page__banner {
   margin-left: -$spacing-06;
   margin-right: -$spacing-06;
@@ -18,6 +19,13 @@
 }
 .portfolio-page__heading {
   color: #fff;
+}
+.portfolio-page {
+  font-weight: 300;
+  &:first-of-type {
+    margin-bottom: 1rem;
+    // color: $Blue;
+  }
 }
 .responsive_img {
   width: 100%;
