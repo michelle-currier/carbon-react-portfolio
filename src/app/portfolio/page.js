@@ -47,11 +47,14 @@ export default function PorfolioPage() {
                   sm={4}
                   className="landing-page__tab-content"
                 >
-                  <h2 className="landing-page__subheading">
+                  <h2 className="portfolio-page">
                     Revolutionize Your Development Workflow: From overwriting
                     woes to seamless GitHub powered solutions
                   </h2>
-                  <h3>Consulting Academy documentation</h3>
+
+                  <h3 className="portfolio-page">
+                    Consulting Academy documentation
+                  </h3>
                   <p className="landing-page__p">
                     An example of a Consulting Academy module template in
                     Github. This showcases the documentation with steps on
@@ -68,11 +71,14 @@ export default function PorfolioPage() {
                 <Column md={4} lg={{ span: 8, offset: 8 }} sm={4}>
                   <Image
                     className="landing-page__illo"
-                    src="http://mcurrier.com/ca_template_gulp.gif"
+                    src="/gulp_how.png"
                     alt="documentation for the Consulting Academy template"
                     width={480}
                     height={540}
+                    // width={925}
+                    // height={880}
                   />
+                  http://mcurrier.com/ca_template_gulp.gif
                 </Column>
               </Grid>
               <Grid className="tabs-group-content">
