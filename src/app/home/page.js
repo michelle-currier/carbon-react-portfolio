@@ -23,11 +23,14 @@ import {
 } from '@carbon/pictograms-react';
 import { InfoSection, InfoCard } from '@/components/Info/Info';
 import Image from 'next/image';
+// import { AspectRatio } from ''
+
+// import background from "./floppy_ibm_disk.jpeg";
 
 export default function LandingPage() {
   return (
     <Grid className="landing-page" fullWidth>
-      <Column lg={16} md={8} sm={4} className="landing-page__banner">
+      <Column lg={16} md={8} sm={4} className="landing-page__banner" style={{ backgroundImage: "url(./floppy_ibm_disk.jpeg)" }}>
         <Breadcrumb noTrailingSlash aria-label="Page navigation">
           <BreadcrumbItem>
             <a href="/">Getting started</a>
@@ -46,7 +49,7 @@ export default function LandingPage() {
             <TabPanel>
               <Grid className="tabs-group-content">
                 <Column
-                  md={4}
+                  md={8}
                   lg={7}
                   sm={4}
                   className="landing-page__tab-content"
@@ -54,10 +57,10 @@ export default function LandingPage() {
                   <h2 className="landing-page__subheading">Who is Michelle?</h2>
                   <p className="landing-page__p">
                     Michelle Currier has over a decade of professional
-                    expertise, I seamlessly integrate a formal foundation in
+                    expertise, they seamlessly integrate a formal foundation in
                     print, web, and graphic design with a proven track record of
                     accomplishments in Software as a Service (SaaS) and app
-                    development. My specializations crosscut video editing,
+                    development. Their specializations crosscut video editing,
                     DJing, Front-end development, and UX/UI design, reflecting a
                     comprehensive skill set and a history of success in crafting
                     engaging and user-friendly digital experiences.
@@ -66,16 +69,23 @@ export default function LandingPage() {
                     href="https://ibm.box.com/v/MichelleCurrierPortfolio"
                     target="blank"
                   >
-                    <Button>Grab my Portfolio Packet</Button>
+                    <Button className="m">Portfolio Packet</Button>
+                  </a>
+
+                  <a
+                    href="https://ibm.box.com/v/m-currier-CV" target="blank"
+                    >
+                    <Button>CV or Resume</Button>
                   </a>
                 </Column>
-                <Column md={4} lg={{ span: 8, offset: 7 }} sm={4}>
+                <Column md={6} lg={{ span: 8, offset: 9 }} sm={4}>
                   <Image
-                    className="landing-page__illo"
-                    src="/tab-illo.png"
+                    className="responsive-img"
+                    // src="/tab-illo.png"
+                    src="/IBM_Think.jpg"
                     alt="Carbon illustration"
-                    width={786}
-                    height={647}
+                    width={480}
+                    height={540}
                   />
                 </Column>
               </Grid>
@@ -83,8 +93,8 @@ export default function LandingPage() {
             <TabPanel>
               <Grid className="tabs-group-content">
                 <Column
-                  
-                  md={6}
+                  lg={8}
+                  md={8}
                   sm={4}
                   className="landing-page__tab-content"
                 >
@@ -105,23 +115,21 @@ export default function LandingPage() {
                     environment.
                   </p>
                 </Column>
-                <Column md={4} lg={{ span: 8, offset: 8 }} sm={4}>
-                {/* <AspectRatio ratio="4x3"> */}
+                <Column md={6} lg={{ span: 8, offset: 9 }} sm={12}>
                 <Image
-                    // className="landing-page__illo"
+                    className="responsive-img"
                     src="/games.jpg"
                     alt="documentation for the Consulting Academy template"
-                    ratio="4x3"
                     width={480}
                     height={540}
                     />
-                {/* </AspectRatio> */}
                 </Column>
               </Grid>
             </TabPanel>
             <TabPanel>
               <Grid className="tabs-group-content">
                 <Column
+                  lg={8}
                   md={8}
                   sm={4}
                   className="landing-page__tab-content"
@@ -130,7 +138,7 @@ export default function LandingPage() {
                     Consulting Academy processes and best practices
                   </h2>
                   <p className="landing-page__p">
-                    During my time with the Consulting Academy, my efforts have
+                    During my tenure with the Consulting Academy, my efforts have
                     extended to fostering proficient usage of Github and the
                     deploy manager within the UI team. The adoption of these
                     tools has led to a notable reduction in code overwriting
@@ -147,17 +155,17 @@ export default function LandingPage() {
                     efficiency and adherence to professional standards.
                   </p>
                 </Column>
-                <Column md={4} lg={{ span: 8, offset: 8 }} sm={4}>
-                {/* <AspectRatio ratio="4x3"> */}
+                <Column md={6} lg={{ span: 8, offset: 9 }} sm={4}>
+                {/* <Column md={6} lg={{ span: 8, offset: 8 }} sm={4}> */}
+                
                 <Image
-                    // className="landing-page__illo"
+                    className="responsive-img"
                     src="/gulp_how.png"
                     alt="documentation for the Consulting Academy template"
-                    ratio="4x3"
                     width={480}
                     height={540}
                     />
-                {/* </AspectRatio> */}
+            
                 </Column>
               </Grid>
             </TabPanel>
@@ -179,7 +187,7 @@ export default function LandingPage() {
           <InfoCard
             heading="Other education"
             body="Generative AI & watsonx for IBM Carbon React tutorial and converting to a portfolio.
-            
+            /n
             AWS Elevate Days 2023,
             
             User Research – Methods and Best Practices*

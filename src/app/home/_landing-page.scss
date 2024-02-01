@@ -14,11 +14,13 @@
   padding-top: $spacing-05;
   padding-bottom: $spacing-07 * 4;
   padding-left: $spacing-06;
-  @include landing-page-background;
+  background-position: top center;
+  background-size: cover;
 }
 
 .landing-page__heading {
   @include type-style('productive-heading-05');
+  color: #fff;
 }
 
 // .landing-page__r2 {
@@ -70,4 +72,14 @@
     margin-left: 0;
     margin-right: 0;
   }
+}
+
+.responsive-img {
+    width: 100%;
+    height: auto;
+}
+
+button.m:first-child {
+  margin-right: $spacing-06;
+  margin-bottom: $spacing-06;
 }

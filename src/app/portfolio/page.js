@@ -22,11 +22,11 @@ export default function PorfolioPage() {
   return (
     <Grid className="portfolio-page" fullWidth>
       <Column lg={16} md={8} sm={4} className="portfolio-page__banner">
-        {/* <Breadcrumb noTrailingSlash aria-label="Page navigation">
+        <Breadcrumb noTrailingSlash aria-label="Page navigation">
           <BreadcrumbItem>
             <a href="/">Home</a>
           </BreadcrumbItem>
-        </Breadcrumb> */}
+        </Breadcrumb>
         <h1 className="portfolio-page__heading">
           Michelle Currier's portfolio
         </h1>
