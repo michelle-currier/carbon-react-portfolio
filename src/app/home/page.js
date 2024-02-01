@@ -71,12 +71,13 @@ export default function LandingPage() {
                   >
                     <Button className="m">Portfolio Packet</Button>
                   </a>
-
                   <a
-                    href="https://ibm.box.com/v/m-currier-CV" target="blank"
-                    >
-                    <Button>CV or Resume</Button>
+                    href="https://ibm.box.com/v/michelleCurrier-CV"
+                    target="_blank"
+                  >
+                    <Button>IBM CV/Resume</Button>
                   </a>
+                  
                 </Column>
                 <Column md={6} lg={{ span: 8, offset: 9 }} sm={4}>
                   <Image

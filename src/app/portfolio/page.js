@@ -18,6 +18,9 @@ import {
 } from '@carbon/pictograms-react';
 import { InfoSection, InfoCard } from '@/components/Info/Info';
 import Image from 'next/image';
+// import myGif from 'http://mcurrier.com/ca_template_gulp.gif'
+
+
 export default function PorfolioPage() {
   return (
     <Grid className="portfolio-page" fullWidth>
@@ -61,25 +64,24 @@ export default function PorfolioPage() {
                     how-to run on your local with Gulp and preps for bundling to
                     deploy.
                   </p>
+                  
                   <a
-                    href="https://github.ibm.com/Michelle-Currier/ca_barebones_translation"
+                    href="https://github.com/michelle-currier"
                     target="_blank"
                   >
-                    <Button>IBM GitHub repo</Button>
+                    <Button>Michelle's GitHub</Button>
                   </a>
                 </Column>
                 <Column md={4} lg={{ span: 8, offset: 8 }} sm={4}>
-                  <Image
+                  {/* <Image
                     className="responsive-img"
                     src="/gulp_how.png"
-                    alt="documentation for the Consulting Academy template"
-                    ratio="4x3"
+                    alt="documentation for the Consulting Academy template"  
                     width={480}
                     height={540}
-                    // width={925}
-                    // height={880}
-                  />
-                  http://mcurrier.com/ca_template_gulp.gif
+                  /> */}
+                  <div className='responsive-img'>
+                  <div className='gif'></div></div>
                 </Column>
               </Grid>
               <Grid className="tabs-group-content">

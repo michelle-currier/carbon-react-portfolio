@@ -35,3 +35,12 @@
 .shadow {
   box-shadow: 0 2px 8px #12161929;
 }
+
+.gif {
+  background-image: url(//mcurrier.com/ca_template_gulp.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 480px;
+  height: 540px;
+}
