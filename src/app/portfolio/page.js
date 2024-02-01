@@ -70,7 +70,7 @@ export default function PorfolioPage() {
                 </Column>
                 <Column md={4} lg={{ span: 8, offset: 8 }} sm={4}>
                   <Image
-                    className="landing-page__illo"
+                    className="responsive-img"
                     src="/gulp_how.png"
                     alt="documentation for the Consulting Academy template"
                     ratio="4x3"
@@ -105,7 +105,7 @@ export default function PorfolioPage() {
                 </Column>
                 <Column md={4} lg={{ span: 8, offset: 8 }} sm={4}>
                   <Image
-                    className="landing-page__illo shadow"
+                    className="responsive-img shadow"
                     src="/tutorial_materialize.jpg"
                     alt="Tutorial on using github, terminal, materialize, & sass"
                     width={480}
@@ -122,25 +122,24 @@ export default function PorfolioPage() {
                   sm={4}
                   className="landing-page__tab-content"
                 >
-                  <h3>HitPath visuals & infographics</h3>
+                  <h2>HitPath visuals & infographics</h2>
                   <p className="landing-page__p">
                     To the right is an example of the HitID Journey showcasing
                     my infographic capabilities. I break down the nuances of how
                     I travels and works.
                   </p>
-
                   <br></br>
                   <Image
-                    className="landing-page__illo"
+                    className="responsive-img"
                     src="/hmc_poster.jpg"
                     alt="HitPath Masters Conference Poster"
                     width={405}
                     height={620}
                   />
                 </Column>
-                <Column md={4} lg={{ span: 8, offset: 8 }} sm={4}>
+                <Column md={4} lg={{ span: 8, offset: 9 }} sm={4}>
                   <Image
-                    className="landing-page__illo"
+                    className="responsive-img"
                     src="/hit_id.jpg"
                     alt="Carbon illustration"
                     width={786}
@@ -154,14 +153,14 @@ export default function PorfolioPage() {
               </Grid>
               <Grid className="tabs-group-content">
                 <Column
-                  md={4}
+                  md={8}
                   lg={16}
                   sm={4}
                   className="landing-page__tab-content"
                 >
                   <h2>Consulting Academy rebrand</h2>
                   <Image
-                    className="responsive_img"
+                    className="responsive-img"
                     src="/Iterations_Timeline.jpg"
                     alt="Carbon illustration"
                     width={1500}
@@ -183,8 +182,7 @@ export default function PorfolioPage() {
                     <li>NextJS: "13.4.9"</li>
                     <li>React-dom: "18.2.0",</li>
                     <li>SASS: "^1.66.1"</li>
-                    <li>Deployed with Vercel.app</li>
-                    <li>with pushes to GitHub</li>
+                    <li>Deployed with Vercel.app with pushes to GitHub</li>
                   </ul>
     
     
