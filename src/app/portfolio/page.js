@@ -64,7 +64,9 @@ export default function PorfolioPage() {
                     how-to run on your local with Gulp and preps for bundling to
                     deploy.
                   </p>
-                  
+                  <a href='https://ibm.box.com/v/consultingAcademyCaseStudy' target='_blank'>
+                  <Button className="m">Consulting Academy Case Study</Button>
+                  </a>
                   <a
                     href="https://github.com/michelle-currier"
                     target="_blank"
@@ -105,7 +107,7 @@ export default function PorfolioPage() {
                     </a>
                   </p>
                 </Column>
-                <Column md={4} lg={{ span: 8, offset: 8 }} sm={4}>
+                <Column md={4} lg={8} sm={4}>
                   <Image
                     className="responsive-img shadow"
                     src="/tutorial_materialize.jpg"
@@ -128,7 +130,7 @@ export default function PorfolioPage() {
                   <p className="landing-page__p">
                     To the right is an example of the HitID Journey showcasing
                     my infographic capabilities. I break down the nuances of how
-                    I travels and works.
+                    the HitID travels and works for the affiliate marketing SaaS called HitPath.
                   </p>
                   <br></br>
                   <Image
@@ -173,8 +175,9 @@ export default function PorfolioPage() {
             </TabPanel>
             <TabPanel>
               <Grid className="tabs-group-content" fullWidth>
-                <Column lg={16} md={8} sm={4} className="landing-page__tab-content">
-                  This site was created with:
+                <Column lg={8} md={4} sm={4} className="landing-page__tab-content">
+                  <h1>React work:</h1>
+                  <p>This site was created with:</p>
                   <ul>
                     <li>React: "18.2.0",</li>
                     <li>Yarn</li>
@@ -190,6 +193,22 @@ export default function PorfolioPage() {
     
 
                 </Column>
+                
+                <Column
+                  md={4}
+                  lg={8}
+                  sm={4}
+                  className="landing-page__tab-content"
+                >
+                  <h1>KRUU</h1>
+                  <p>A prototype site for the KRUU app UI Designs.</p>
+                  <a href='https://kruu.vercel.app/' target='_blank'>
+                  <Button className="m">kruu app site</Button></a>
+                </Column>
+              </Grid>
+
+              <Grid>
+                
               </Grid>
             </TabPanel>
           </TabPanels>

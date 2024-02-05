@@ -77,7 +77,9 @@ export default function LandingPage() {
                   >
                     <Button>IBM CV/Resume</Button>
                   </a>
-                  
+                  <a href="https://ibm.box.com/v/consultingAcademyCaseStudy" target="_blank">
+                    <Button>Consulting Academy Case Study</Button>
+                  </a>
                 </Column>
                 <Column md={6} lg={{ span: 8, offset: 9 }} sm={4}>
                   <Image
