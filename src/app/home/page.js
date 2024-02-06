@@ -75,7 +75,7 @@ export default function LandingPage() {
                     href="https://ibm.box.com/v/michelleCurrier-CV"
                     target="_blank"
                   >
-                    <Button>IBM CV/Resume</Button>
+                    <Button className="m">IBM CV/Resume</Button>
                   </a>
                   <a href="https://ibm.box.com/v/consultingAcademyCaseStudy" target="_blank">
                     <Button>Consulting Academy Case Study</Button>
@@ -150,12 +150,7 @@ export default function LandingPage() {
                   </p>
 
                   <p className="landing-page__p">
-                    The implementation of version control further enhances our
-                    development process by providing the capability to revert
-                    the codebase to previous states when necessary. This
-                    newfound capability ensures greater stability and
-                    accountability in our projects, contributing to overall
-                    efficiency and adherence to professional standards.
+                  Integrating version control into our development workflow significantly elevates our processes, enabling seamless storage, modification, and collaboration. This invaluable feature fosters heightened stability and accountability across our projects, ultimately bolstering efficiency and upholding the highest professional standards.
                   </p>
                 </Column>
                 <Column md={6} lg={{ span: 8, offset: 9 }} sm={4}>
