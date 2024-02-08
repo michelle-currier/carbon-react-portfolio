@@ -117,6 +117,9 @@ export default function LandingPage() {
                     solutions and fostering a sustainable development
                     environment.
                   </p>
+                  <a href="https://docs.google.com/document/d/1LCAjcWYcKizXFCGjGBNFz04pF05_KaHL/edit?usp=sharing&ouid=117809990728886596970&rtpof=true&sd=true" target="_blank">
+                    <Button>Game Development Specifications</Button>
+                  </a>
                 </Column>
                 <Column md={6} lg={{ span: 8, offset: 9 }} sm={12}>
                 <Image
@@ -152,6 +155,9 @@ export default function LandingPage() {
                   <p className="landing-page__p">
                   Integrating version control into our development workflow significantly elevates our processes, enabling seamless storage, modification, and collaboration. This invaluable feature fosters heightened stability and accountability across our projects, ultimately bolstering efficiency and upholding the highest professional standards.
                   </p>
+                  <a href="https://ibm.box.com/v/consultingAcademyCaseStudy" target="_blank">
+                    <Button>Consulting Academy Case Study</Button>
+                  </a>
                 </Column>
                 <Column md={6} lg={{ span: 8, offset: 9 }} sm={4}>
                 {/* <Column md={6} lg={{ span: 8, offset: 8 }} sm={4}> */}
