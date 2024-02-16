@@ -11,6 +11,7 @@ import {
   TabPanel,
   Grid,
   Column,
+  Link
 } from '@carbon/react';
 import {
   Advocate,
@@ -65,21 +66,25 @@ export default function LandingPage() {
                     comprehensive skill set and a history of success in crafting
                     engaging and user-friendly digital experiences.
                   </p>
-                  <a
-                    href="https://ibm.box.com/v/MichelleCurrierPortfolio"
+                  <Link
+                    href="https://drive.google.com/file/d/1oJ4x2FpTC3pL-Zh5OLMLLBRlLC7e3gfX/view?usp=drive_link"
                     target="blank"
                   >
                     <Button className="m">Portfolio Packet</Button>
-                  </a>
-                  <a
+                  </Link>
+                  <Link href='https://drive.google.com/file/d/1LFJ3i7QD5EQVY2Voi4R8rEX4-sr6H_Rd/view?usp=sharing' target="_blank">
+                    <Button>CV/Resume</Button>
+                  </Link>
+                  <Link
                     href="https://ibm.box.com/v/michelleCurrier-CV"
                     target="_blank"
                   >
                     <Button className="m">IBM CV/Resume</Button>
-                  </a>
-                  <a href="https://ibm.box.com/v/consultingAcademyCaseStudy" target="_blank">
+                  </Link>
+                  <Link href="https://drive.google.com/file/d/1bl1TFnyOfbcJhKgxW8xdvIwPEw7kwipj/view?usp=drive_link" target="_blank">
                     <Button>Consulting Academy Case Study</Button>
-                  </a>
+                  </Link>
+                  <Link href="https://calendly.com/michellecurrier/consultation" target="_blank"> <Button>Book a meeting</Button></Link>
                 </Column>
                 <Column md={6} lg={{ span: 8, offset: 9 }} sm={4}>
                   <Image
@@ -155,7 +160,7 @@ export default function LandingPage() {
                   <p className="landing-page__p">
                   Integrating version control into our development workflow significantly elevates our processes, enabling seamless storage, modification, and collaboration. This invaluable feature fosters heightened stability and accountability across our projects, ultimately bolstering efficiency and upholding the highest professional standards.
                   </p>
-                  <a href="https://ibm.box.com/v/consultingAcademyCaseStudy" target="_blank">
+                  <a href="https://drive.google.com/file/d/1bl1TFnyOfbcJhKgxW8xdvIwPEw7kwipj/view?usp=drive_link" target="_blank">
                     <Button>Consulting Academy Case Study</Button>
                   </a>
                 </Column>
