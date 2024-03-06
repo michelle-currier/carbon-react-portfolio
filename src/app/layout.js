@@ -4,7 +4,8 @@ import { Providers } from './providers';
 
 export const metadata = {
   title: 'Michelle Currier Portfolio',
-  description: 'IBM Carbon Portfolio with Carbon + NextJS 13 + using Vercel.app to deploy from Github',
+  description:
+    'IBM Carbon Portfolio with Carbon + NextJS 13 + using Vercel.app to deploy from Github',
 };
 
 export default function RootLayout({ children }) {

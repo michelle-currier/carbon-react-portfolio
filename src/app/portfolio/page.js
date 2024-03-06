@@ -1,4 +1,5 @@
 'use client';
+import { useRef, useState } from 'react';
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -10,6 +11,7 @@ import {
   TabPanel,
   Grid,
   Column,
+  Link,
 } from '@carbon/react';
 import {
   Advocate,
@@ -19,7 +21,6 @@ import {
 import { InfoSection, InfoCard } from '@/components/Info/Info';
 import Image from 'next/image';
 // import myGif from 'http://mcurrier.com/ca_template_gulp.gif'
-
 
 export default function PorfolioPage() {
   return (
@@ -64,15 +65,19 @@ export default function PorfolioPage() {
                     how-to run on your local with Gulp and preps for bundling to
                     deploy.
                   </p>
-                  <a href='https://ibm.box.com/v/consultingAcademyCaseStudy' target='_blank'>
-                  <Button className="m">Consulting Academy Case Study</Button>
-                  </a>
-                  <a
-                    href="https://github.com/michelle-currier"
+                  <Link
+                    href="https://drive.google.com/file/d/1bl1TFnyOfbcJhKgxW8xdvIwPEw7kwipj/view?usp=drive_link"
                     target="_blank"
                   >
+                    <Button className="m">Consulting Academy Case Study</Button>
+                  </Link>
+                  <Link
+                    href="https://github.com/michelle-currier"
+                    target="_blank"
+                    aria-label="Michelle's GitHub"
+                  >
                     <Button>Michelle's GitHub</Button>
-                  </a>
+                  </Link>
                 </Column>
                 <Column md={4} lg={{ span: 8, offset: 8 }} sm={4}>
                   {/* <Image
@@ -82,8 +87,12 @@ export default function PorfolioPage() {
                     width={480}
                     height={540}
                   /> */}
-                  <div className='responsive-img'>
-                  <div className='gif'></div></div>
+                  <div className="responsive-img">
+                    <div
+                      className="gif"
+                      aria-label="A scrolling animation of documentation on how to setup a module template, then run on your local to build, and prep for deployement with gulp."
+                    ></div>
+                  </div>
                 </Column>
               </Grid>
               <Grid className="tabs-group-content">
@@ -99,12 +108,15 @@ export default function PorfolioPage() {
                     Tutorial
                   </p>
                   <p>
-                    <a
+                    <Link
                       href="http://mcurrier.com/materialize101/index.php"
                       target="_blank"
+                      aria-label="Materialize 101 tutorial"
                     >
-                      <Button>Check it out</Button>
-                    </a>
+                      <Button type="button" aria-label="materialize101">
+                        Check it out
+                      </Button>
+                    </Link>
                   </p>
                 </Column>
                 <Column md={4} lg={8} sm={4}>
@@ -130,7 +142,8 @@ export default function PorfolioPage() {
                   <p className="landing-page__p">
                     To the right is an example of the HitID Journey showcasing
                     my infographic capabilities. I break down the nuances of how
-                    the HitID travels and works for the affiliate marketing SaaS called HitPath.
+                    the HitID travels and works for the affiliate marketing SaaS
+                    called HitPath.
                   </p>
                   <br></br>
                   <Image
@@ -145,7 +158,7 @@ export default function PorfolioPage() {
                   <Image
                     className="responsive-img"
                     src="/hit_id.jpg"
-                    alt="Carbon illustration"
+                    alt="An infographic explaining the lifecycle of the HitID"
                     width={786}
                     height={647}
                   />
@@ -166,7 +179,7 @@ export default function PorfolioPage() {
                   <Image
                     className="responsive-img"
                     src="/Iterations_Timeline.jpg"
-                    alt="Carbon illustration"
+                    alt="Consulting Academy rebrand before and after"
                     width={1500}
                     height={844}
                   />
@@ -175,7 +188,12 @@ export default function PorfolioPage() {
             </TabPanel>
             <TabPanel>
               <Grid className="tabs-group-content" fullWidth>
-                <Column lg={8} md={4} sm={4} className="landing-page__tab-content">
+                <Column
+                  lg={8}
+                  md={4}
+                  sm={4}
+                  className="landing-page__tab-content"
+                >
                   <h1>React work:</h1>
                   <p>This site was created with:</p>
                   <ul>
@@ -183,17 +201,14 @@ export default function PorfolioPage() {
                     <li>Yarn</li>
                     <li>Octokit/core: "4.2.0",</li>
                     <li>Eslint: "8.44.0",</li>
-                    <li>Prettier: "^2.8.8"</li>         
+                    <li>Prettier: "^2.8.8"</li>
                     <li>NextJS: "13.4.9"</li>
                     <li>React-dom: "18.2.0",</li>
                     <li>SASS: "^1.66.1"</li>
                     <li>Deployed with Vercel.app with pushes to GitHub</li>
                   </ul>
-    
-    
-
                 </Column>
-                
+
                 <Column
                   md={4}
                   lg={8}
@@ -202,20 +217,25 @@ export default function PorfolioPage() {
                 >
                   <h1>KRUU</h1>
                   <p>A prototype site for the KRUU app UI Designs.</p>
-                  <a href='https://kruu.vercel.app/' target='_blank'>
-                  <Button className="m">kruu app site</Button></a>
+                  <Link
+                    href="https://kruu.vercel.app/"
+                    target="_blank"
+                    aria-label="KRUU app promo site. Think elevator pitch with mid level mockups, site maps, and general concept."
+                  >
+                    <Button className="m">kruu app site</Button>
+                  </Link>
                 </Column>
               </Grid>
 
-              <Grid>
-                
-              </Grid>
+              <Grid></Grid>
             </TabPanel>
           </TabPanels>
         </Tabs>
       </Column>
       <Column lg={16} md={8} sm={4} className="landing-page__r3">
-        <h2>Certifications &amp; trainings</h2>
+        <h2 className="portfolio-page__sub-heading">
+          Certifications &amp; trainings
+        </h2>
         <InfoSection
           heading="IBM's L&K Consulting Academy focus areas"
           className=""

@@ -1,6 +1,7 @@
 @use '@carbon/react';
 @use '@carbon/react/scss/breakpoint' as *;
-
+@use '@carbon/themes/scss/themes' as *;
+@use '@carbon/themes';
 @use '@/components/TutorialHeader/tutorial-header';
 @use '@/components/Info/info';
 
@@ -36,4 +37,26 @@
 .responsive-img {
   width: 100%;
   height: auto;
+  max-width: 100%;
+  overflow: hidden;
 }
+ul > li {
+  line-height: 1.4rem;
+  margin-left: 0rem;
+}
+ul {
+  margin-bottom: 1rem;
+}
+.p-l {
+  margin-left: 1.2rem;
+}
+// horizontal scroll at 671px and lower
+
+// swap to dark
+[data-carbon-theme='g90'] {
+  @include themes.theme($g90);
+}
+.dark-mode {
+  @include themes.theme($g90);
+}
+// name the prop that is clicked to add class

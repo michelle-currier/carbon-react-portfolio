@@ -21,12 +21,18 @@ const InfoCard = (props) => {
 
   return (
     <Column sm={4} md={8} lg={4} className="info-card">
-      <h4 className="info-card__heading">
-        {`${splitHeading[0]} `}
-        <strong>{splitHeading[1]}</strong>
-      </h4>
-      <p className="info-card__body">{props.body}</p>
-      {props.icon()}
+      <Grid>
+        <Column sm={4} md={7} lg={4}>
+          <h4 className="info-card__heading">
+            {`${splitHeading[0]} `}
+            <strong>{splitHeading[1]}</strong>
+          </h4>
+          <p className="info-card__body">{props.body}</p>
+        </Column>
+        <Column sm={4} md={1} lg={4}>
+          {props.icon()}
+        </Column>
+      </Grid>
     </Column>
   );
 };

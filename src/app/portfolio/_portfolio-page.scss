@@ -16,16 +16,19 @@
     no-repeat;
   background-position: center;
   background-size: cover;
+  @include breakpoint-down(md) {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 .portfolio-page__heading {
   color: #fff;
 }
+.portfolio-page__sub-heading {
+  margin-bottom: $spacing-09;
+}
 .portfolio-page {
   font-weight: 300;
-  &:first-of-type {
-    margin-bottom: 1rem;
-    // color: $Blue;
-  }
 }
 .responsive_img {
   width: 100%;
