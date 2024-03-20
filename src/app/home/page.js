@@ -101,8 +101,14 @@ export default function LandingPage() {
                       </Link>
                     </li>
                     <li>
-                      <Link
+                      {/* <Link
                         href="https://ibm.box.com/v/michelleCurrier-CV"
+                        target="_blank"
+                      >
+                        IBM CV/Resume
+                      </Link> */}
+                      <Link
+                        href="https://drive.google.com/file/d/1t3WqbzuZS1oM-a-y9R0OorVysiDlRE6H/view?usp=sharing"
                         target="_blank"
                       >
                         IBM CV/Resume
