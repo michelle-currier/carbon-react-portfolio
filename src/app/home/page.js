@@ -39,11 +39,11 @@ export default function LandingPage() {
         className="landing-page__banner"
         style={{ backgroundImage: 'url(./floppy_ibm_disk.jpeg)' }}
       >
-        <Breadcrumb noTrailingSlash aria-label="Page navigation">
+        {/* <Breadcrumb noTrailingSlash aria-label="Page navigation">
           <BreadcrumbItem>
             <a href="/">Getting started</a>
           </BreadcrumbItem>
-        </Breadcrumb>
+        </Breadcrumb> */}
         <h1 className="landing-page__heading">A Designer who codes...</h1>
       </Column>
       <Column lg={16} md={8} sm={4} className="landing-page__r2">
@@ -307,7 +307,7 @@ export default function LandingPage() {
         </Tabs>
       </Column>
       <Column lg={16} md={8} sm={4} className="landing-page__r3">
-        <InfoSection heading="Certifications &amp; trainings" className="">
+        <InfoSection heading="Certifications &amp; Trainings" className="">
           <InfoCard
             heading="Enterprise Design Thinking"
             body="Current projects include the NA CIC Website rebrand and CMS build with Vue. Sitting in with the Expression Journal app as a Design Consultant."

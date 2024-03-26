@@ -51,6 +51,11 @@ const TutorialHeader = () => {
               <HeaderMenuItem>Portfolio</HeaderMenuItem>
             </Link>
           </HeaderNavigation>
+          <HeaderNavigation aria-label="Nav">
+            <Link href="/disciplines" passHref legacyBehavior>
+              <HeaderMenuItem>Disciplines</HeaderMenuItem>
+            </Link>
+          </HeaderNavigation>
           <SideNav
             aria-label="Side navigation"
             expanded={isSideNavExpanded}
@@ -63,6 +68,9 @@ const TutorialHeader = () => {
                 </Link>
                 <Link href="/portfolio" passHref legacyBehavior>
                   <HeaderMenuItem>Portfolio</HeaderMenuItem>
+                </Link>
+                <Link href="/disciplines" passHref legacyBehavior>
+                  <HeaderMenuItem>Disciplines</HeaderMenuItem>
                 </Link>
               </HeaderSideNavItems>
             </SideNavItems>

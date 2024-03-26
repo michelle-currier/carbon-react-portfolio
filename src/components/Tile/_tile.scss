@@ -1,0 +1,149 @@
+@use '@carbon/react/scss/type' as *;
+
+@use '@carbon/react/scss/spacing' as *;
+@use '@carbon/react/scss/breakpoint' as *;
+@use '@carbon/react/scss/theme' as *;
+@use '@carbon/react/scss/colors' as *;
+.info-section__heading {
+  @include type-style('heading-01');
+}
+.tile-container {
+margin-right: $spacing-01;
+margin-top: $spacing-03;
+margin-bottom: $spacing-05;
+}
+.magenta {
+  .cds--css-grid-column h3 {
+    border-top: 1px solid $magenta-60;
+    padding-top: $spacing-03;
+    margin-right: -0.8rem;
+  }
+  .cds--tile {
+    border: 1px solid $magenta-60;
+    svg {
+      fill: $magenta-60;
+      
+    }
+  }
+}
+ 
+.orange {
+  .cds--css-grid-column h3 {
+    border-top: 1px solid $orange-50;
+    margin-right: -0.8rem;
+    padding-top: $spacing-03;
+  }
+  .cds--tile {
+    border: 1px solid $orange-50;
+    svg {
+      fill: $orange-50;
+    }
+  }
+}
+
+.yellow {
+  .cds--css-grid-column h3 {
+    border-top: 1px solid $yellow-40;
+    margin-right: -0.8rem;
+    padding-top: $spacing-03;
+  }
+  .cds--tile {
+    border: 1px solid $yellow-40;
+    svg {
+      fill: $yellow-40;
+    }
+  }
+}
+.green {
+  .cds--css-grid-column h3 {
+    border-top: 1px solid $green-60;
+    margin-right: -0.8rem;
+    padding-top: $spacing-03;
+  }
+  .cds--tile {
+    border: 1px solid $green-60;
+    svg {
+      fill: $green-60;
+    }
+  }
+}
+
+.teal {
+  .cds--css-grid-column h3 {
+    border-top: 1px solid $teal-60;
+    margin-right: -0.8rem;
+    padding-top: $spacing-03;
+  }
+  .cds--tile {
+    border: 1px solid $teal-60;
+    svg {
+      fill: $teal-60;
+    }
+  }
+}
+
+.blue {
+  .cds--css-grid-column h3 {
+    border-top: 1px solid $blue-60;
+    margin-right: -0.8rem;
+    padding-top: $spacing-03;
+  }
+  .cds--tile {
+    border: 1px solid $blue-60;
+    svg {
+      fill: $blue-60;
+    }
+  }
+}
+
+.purple {
+  // .cds--css-grid-column h3 {
+  //   border-top: 1px solid $purple-60;
+  //   margin-right: -0.8rem;
+  //   padding-top: $spacing-03;
+  // }
+  .cds--tile {
+    svg {
+      fill: $purple-60;
+    }
+  }
+}
+
+.cds--tile {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid $purple-60;
+  svg {
+    margin-top: $spacing-04;
+    margin-left: $spacing-01;
+  }
+}
+.tile-section {
+  margin-top: $spacing-06;
+  // @include breakpoint-down(lg) {
+  //   &:nth-child(odd) {
+  //     border-left: none;
+  //   }
+  //   &:nth-child(even),
+  //   &:nth-child(3n) {
+  //     border-top: 1px solid $border-subtle-01;
+  //     padding-top: $spacing-04;
+  //   }
+  // }
+}
+
+.tile-card__heading {
+  @include type-style('productive-heading-03');
+}
+
+.tile-card__body {
+  margin-top: $spacing-06;
+  flex-grow: 1; // fill space so icons are bottom aligned
+  @include type-style('body-long-01');
+
+  // prevent large line lengths between small and medium viewports
+  @include breakpoint-between(321px, md) {
+    max-width: 75%;
+  }
+}
